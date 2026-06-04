@@ -99,5 +99,50 @@ const ogLocale = locale === 'tr' ? 'tr_TR' : locale === 'en' ? 'en_US' : 'ar_AR'
         <path d="M12.031 21.61c-1.631 0-3.23-.44-4.631-1.27l-5.15 1.35 1.37-5.02a11.9 11.9 0 01-1.34-5.46C2.28 4.7 6.64.33 12.03.33a11.83 11.83 0 018.42 3.48 11.86 11.86 0 013.48 8.42c-.01 5.4-4.38 9.38-11.9 9.38zm-4.9-3.23l.3.18a9.89 9.89 0 004.6 1.13c4.4 0 8-3.59 8-8s-3.6-8-8-8-8 3.6-8 8c0 1.76.54 3.48 1.57 4.9l.21.32-.87 3.19 3.28-.86.01-.01zM17.15 14.5c-.27-.14-1.62-.8-1.87-.89-.25-.09-.43-.14-.62.14-.18.27-.71.89-.87 1.07-.16.18-.32.2-.59.07-.27-.14-1.16-.43-2.2-1.36-.81-.72-1.35-1.62-1.51-1.89-.16-.27-.02-.42.12-.55.12-.13.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.62-1.5-.85-2.05-.22-.54-.45-.47-.62-.48h-.53c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.3s.98 2.67 1.12 2.85c.14.18 1.94 2.96 4.7 4.12.66.28 1.17.45 1.57.57.66.21 1.26.18 1.74.11.53-.08 1.62-.66 1.85-1.3.23-.64.23-1.19.16-1.3-.06-.11-.24-.18-.51-.31z" />
       </svg>
     </a>
+    <!-- Mobile Language Switcher (Floating) -->
+    <div class="md:hidden fixed bottom-6 left-6 z-50">
+      <!-- Options Container -->
+      <div 
+        id="mobile-lang-options"
+        class="absolute bottom-full left-0 mb-4 flex flex-col gap-3 transition-all duration-300 ease-out opacity-0 pointer-events-none translate-y-4"
+      >
+        <a href={`/tr${canonicalPath}`} class="w-12 h-12 bg-white border border-[#E0DDD7] rounded-full flex items-center justify-center text-[#0D6830] font-bold text-[13px] shadow-md hover:scale-110 transition-transform">TR</a>
+        <a href={`/en${canonicalPath}`} class="w-12 h-12 bg-white border border-[#E0DDD7] rounded-full flex items-center justify-center text-[#0D6830] font-bold text-[13px] shadow-md hover:scale-110 transition-transform">EN</a>
+        <a href={`/ar${canonicalPath}`} class="w-12 h-12 bg-white border border-[#E0DDD7] rounded-full flex items-center justify-center text-[#0D6830] font-bold text-[13px] shadow-md hover:scale-110 transition-transform">AR</a>
+      </div>
+      
+      <!-- Main Toggle Button -->
+      <button 
+        id="mobile-lang-toggle"
+        class="w-14 h-14 bg-white border-2 border-[#0D6830] rounded-full flex items-center justify-center text-[#0D6830] font-bold text-lg shadow-lg hover:scale-105 transition-transform"
+        aria-label="Change Language"
+      >
+        {locale === 'tr' ? 'TR' : locale === 'en' ? 'EN' : 'AR'}
+      </button>
+    </div>
+
+    <script>
+      const toggle = document.getElementById('mobile-lang-toggle');
+      const options = document.getElementById('mobile-lang-options');
+      
+      if (toggle && options) {
+        toggle.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const isOpen = !options.classList.contains('opacity-0');
+          
+          if (isOpen) {
+            options.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+          } else {
+            options.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+          }
+        });
+
+        document.addEventListener('click', (e) => {
+          if (!options.contains(e.target as Node) && !toggle.contains(e.target as Node)) {
+            options.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+          }
+        });
+      }
+    </script>
   </body>
 </html>
