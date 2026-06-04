@@ -1,0 +1,247 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ProductCard from '../../../components/ProductCard.astro';
+
+import { type Locale, getTranslations, localizedPath } from '../../../i18n';
+
+import { ALL_PRODUCTS, getCategoryMap, translateProductName } from '../../../data/products';
+
+export function getStaticPaths() {
+  const locales = ['tr', 'en', 'ar'];
+  return locales.flatMap(lang =>
+    ALL_PRODUCTS.map(product => ({
+      params: { lang, id: product.id },
+      props: { product },
+    }))
+  );
+}
+
+const { lang } = Astro.params;
+const locale = lang as Locale;
+const t = getTranslations(locale);
+const { product } = Astro.props as { product: typeof ALL_PRODUCTS[0] };
+const contactPath = localizedPath('/contact', locale);
+const productsPath = localizedPath('/products', locale);
+const categoryMap = getCategoryMap(locale);
+const categoryLabel = categoryMap[product.category] || product.category;
+const displayName = translateProductName(product.name, locale);
+
+// Get related products (same category first, fallback to others)
+let relatedProducts = ALL_PRODUCTS.filter(p => p.category === product.category && p.id !== product.id);
+if (relatedProducts.length < 3) {
+  const otherProducts = ALL_PRODUCTS.filter(p => p.category !== product.category && p.id !== product.id);
+  relatedProducts = [...relatedProducts, ...otherProducts];
+}
+relatedProducts = relatedProducts.slice(0, 4);
+---
+
+<BaseLayout
+  title={`${product.name} | KADA Oto Radyatör`}
+  description={`KADA ${product.brand} ${product.name} - OEM ${product.oem} - Ürün Kodu ${product.code}. Endüstriyel soğutma sistemi. Teklif alın.`}
+  locale={locale}
+  canonicalPath={`/products/${product.id}`}
+>
+
+<div class="bg-cream min-h-screen">
+  <!-- Breadcrumb -->
+  <nav class="pt-8 md:pt-12 pb-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ol class="flex items-center gap-2 text-xs text-muted flex-wrap">
+        <li><a href={localizedPath('/', locale)} class="hover:text-primary transition-colors">{t.nav.home}</a></li>
+        <li><span class="text-muted/50">/</span></li>
+        <li><a href={productsPath} class="hover:text-primary transition-colors">{t.nav.products}</a></li>
+        <li><span class="text-muted/50">/</span></li>
+        <li class="text-dark-bg font-medium truncate max-w-[200px]">{displayName}</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Product Detail -->
+  <section class="pb-16 md:pb-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+
+        <!-- Image Gallery -->
+        <div class="space-y-4">
+          <!-- Main Image -->
+          <div class="bg-white rounded-2xl border border-[#E0DDD7] overflow-hidden shadow-sm relative group">
+            <div class="aspect-square flex items-center justify-center p-6 md:p-10 bg-white">
+              <img
+                id="main-product-image"
+                src={product.images[0]}
+                alt={`KADA ${product.brand} ${product.name} Soğutma Sistemi - Orijinal OEM ${product.oem} - Parça Kodu ${product.code}`}
+                class="max-w-full max-h-full object-contain transition-opacity duration-200"
+              />
+            </div>
+
+            {product.images.length > 1 && (
+              <>
+                <button id="prev-image-btn" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-white/90 hover:bg-white text-dark-bg shadow border border-[#E0DDD7] opacity-0 group-hover:opacity-100 transition-all z-10" aria-label="Önceki Görsel">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                </button>
+                <button id="next-image-btn" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-white/90 hover:bg-white text-dark-bg shadow border border-[#E0DDD7] opacity-0 group-hover:opacity-100 transition-all z-10" aria-label="Sonraki Görsel">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </>
+            )}
+          </div>
+
+          <!-- Thumbnail Gallery -->
+          {product.images.length > 1 && (
+            <div class="grid grid-cols-5 gap-2" id="thumbnail-gallery">
+              {product.images.map((img, i) => (
+                <button
+                  class:list={[
+                    'aspect-square bg-white rounded-xl border overflow-hidden p-2 transition-all duration-200 hover:shadow-md cursor-pointer thumb-btn',
+                    i === 0 ? 'border-primary ring-1 ring-primary' : 'border-[#E0DDD7]'
+                  ]}
+                  data-src={img}
+                  data-index={i}
+                >
+                  <img
+                    src={img}
+                    alt={`${product.name} - Görsel ${i + 1}`}
+                    class="w-full h-full object-contain"
+                    loading="lazy"
+                  />
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+
+        <!-- Product Info -->
+        <div class="flex flex-col">
+          <!-- Category Badge -->
+          <div class="mb-4">
+            <span class="inline-block px-3 py-1 bg-[#1A1E1B] text-white text-[10px] font-semibold uppercase tracking-wider rounded-lg">
+              {categoryLabel}
+            </span>
+          </div>
+
+          <h1 class="text-3xl md:text-4xl font-heading text-dark-bg mb-6">{displayName}</h1>
+
+          <!-- Specs Table -->
+          <div class="bg-white rounded-2xl border border-[#E0DDD7] overflow-hidden shadow-sm mb-8">
+            <div class="divide-y divide-[#E0DDD7]">
+              <div class="flex items-center justify-between px-6 py-4">
+                <span class="text-sm text-muted font-medium">{t.products?.cardBrand || 'Marka'}</span>
+                <span class="text-sm text-dark-bg font-bold">{product.brand}</span>
+              </div>
+              <div class="flex items-center justify-between px-6 py-4">
+                <span class="text-sm text-muted font-medium">{t.products?.cardOem || 'OEM Kodu'}</span>
+                <span class="text-sm text-dark-bg font-mono font-bold">{product.oem}</span>
+              </div>
+              <div class="flex items-center justify-between px-6 py-4">
+                <span class="text-sm text-muted font-medium">{t.products?.cardCode || 'Ürün Kodu'}</span>
+                <span class="text-sm text-primary font-mono font-bold">{product.code}</span>
+              </div>
+              <div class="flex items-center justify-between px-6 py-4">
+                <span class="text-sm text-muted font-medium">{t.products?.cardCategory || 'Kategori'}</span>
+                <span class="text-sm text-dark-bg font-semibold">{categoryLabel}</span>
+              </div>
+              <div class="flex items-center justify-between px-6 py-4">
+                <span class="text-sm text-muted font-medium">{t.products?.cardImages || 'Görseller'}</span>
+                <span class="text-sm text-dark-bg font-semibold">{product.images.length} {t.products?.cardPcs || 'adet'}</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-3 mt-auto">
+            <a
+              href={`${contactPath}?product=${encodeURIComponent(product.code)}`}
+              class="flex-1 inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary hover:bg-primary-dark text-white font-bold rounded-xl transition-all duration-300 hover:-translate-y-0.5 shadow-lg shadow-primary/20 text-sm"
+            >
+              {t.nav.getQuote}
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
+            <a
+              href={productsPath}
+              class="flex-1 inline-flex items-center justify-center gap-2 px-8 py-4 border border-[#E0DDD7] text-dark-bg hover:border-primary hover:text-primary font-bold rounded-xl transition-all duration-200 text-sm"
+            >
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+              {t.products?.viewAll?.replace(' →', '') || 'Tüm Ürünler'}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products Section -->
+  <section class="py-16 md:py-24 border-t border-[#E0DDD7]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between mb-8 md:mb-12">
+        <h2 class="text-3xl md:text-4xl font-heading text-dark-bg">{t.products?.related || 'İlgili Ürünler'}</h2>
+        <a href={productsPath} class="hidden sm:inline-flex items-center gap-2 text-primary font-bold hover:text-primary-dark transition-colors">
+          {t.products?.viewAll || 'Tüm Ürünleri Gör →'}
+        </a>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 md:gap-6">
+        {relatedProducts.map(relProduct => (
+          <ProductCard product={relProduct} locale={locale} />
+        ))}
+      </div>
+      
+      <div class="mt-8 text-center sm:hidden">
+        <a href={productsPath} class="inline-flex items-center gap-2 text-primary font-bold hover:text-primary-dark transition-colors">
+          {t.products?.viewAll || 'Tüm Ürünleri Gör →'}
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+</BaseLayout>
+
+<script>
+  // Gallery interaction
+  const mainImage = document.getElementById('main-product-image') as HTMLImageElement;
+  const gallery = document.getElementById('thumbnail-gallery');
+  const prevBtn = document.getElementById('prev-image-btn');
+  const nextBtn = document.getElementById('next-image-btn');
+
+  if (gallery && mainImage) {
+    const thumbs = Array.from(gallery.querySelectorAll<HTMLButtonElement>('.thumb-btn'));
+    let currentIndex = 0;
+
+    const updateImage = (index: number) => {
+      if (index < 0) index = thumbs.length - 1;
+      if (index >= thumbs.length) index = 0;
+      currentIndex = index;
+      
+      const thumb = thumbs[currentIndex];
+      const src = thumb.dataset.src;
+      
+      if (src) {
+        mainImage.style.opacity = '0.4';
+        setTimeout(() => {
+          mainImage.src = src;
+          mainImage.style.opacity = '1';
+        }, 200);
+
+        // Update active state
+        thumbs.forEach(t => {
+          t.classList.remove('border-primary', 'ring-1', 'ring-primary');
+          t.classList.add('border-[#E0DDD7]');
+        });
+        thumb.classList.remove('border-[#E0DDD7]');
+        thumb.classList.add('border-primary', 'ring-1', 'ring-primary');
+      }
+    };
+
+    thumbs.forEach((thumb, index) => {
+      thumb.addEventListener('click', () => updateImage(index));
+    });
+
+    if (prevBtn) prevBtn.addEventListener('click', () => updateImage(currentIndex - 1));
+    if (nextBtn) nextBtn.addEventListener('click', () => updateImage(currentIndex + 1));
+  }
+</script>

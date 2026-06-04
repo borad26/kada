@@ -1,0 +1,88 @@
+---
+import { localizedPath, type Locale, getTranslations } from '../i18n';
+import { getCategoryMap, translateProductName } from '../data/products';
+
+export interface Props {
+  product: {
+    id: string;
+    name: string;
+    category: string;
+    brand: string;
+    oem: string;
+    code: string;
+    images: string[];
+  };
+  locale: Locale;
+}
+
+const { product, locale } = Astro.props;
+const t = getTranslations(locale);
+const categoryMap = getCategoryMap(locale);
+const displayName = translateProductName(product.name, locale);
+---
+
+<a
+  href={localizedPath(`/products/${product.id}`, locale)}
+  class="product-card block bg-white rounded-2xl shadow-sm hover:shadow-xl border border-[#E0DDD7] hover:border-primary/20 transition-all duration-300 hover:-translate-y-1 overflow-hidden group"
+  data-id={product.id}
+  data-name={product.name.toLowerCase()}
+  data-brand={product.brand.toLowerCase()}
+  data-oem={product.oem.toLowerCase()}
+  data-code={product.code.toLowerCase()}
+  data-category={product.category}
+  id={`product-${product.id}`}
+>
+  <!-- Product Image -->
+  <div class="relative w-full aspect-[4/3] bg-white overflow-hidden rounded-t-2xl">
+    <img
+      src={product.images[0]}
+      alt={`KADA ${product.brand} ${product.name} Soğutma Sistemi - Orijinal OEM ${product.oem} - Parça Kodu ${product.code}`}
+      class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+      loading="lazy"
+      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+    />
+    <!-- Fallback if image fails -->
+    <div class="absolute inset-0 bg-white items-center justify-center hidden">
+      <svg class="w-16 h-16 text-muted/30" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
+        <path d="M4 4h16v2H4V4zm0 14h16v2H4v-2zm2-10h2v8H6V8zm4 0h2v8h-2V8zm4 0h2v8h-2V8zm4 0h2v8h-2V8z" />
+      </svg>
+    </div>
+    <!-- Category Badge -->
+    <div class="absolute top-3 left-3 z-10">
+      <span class="inline-block px-1.5 py-0.5 sm:px-2.5 sm:py-1 bg-[#1A1E1B]/80 backdrop-blur-sm text-white text-[9px] sm:text-[10px] font-semibold uppercase tracking-wider rounded-md sm:rounded-lg">
+        {categoryMap[product.category] || product.category}
+      </span>
+    </div>
+    <!-- Multi-image indicator -->
+    {product.images.length > 1 && (
+      <div class="absolute bottom-3 right-3 z-10">
+        <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-white/90 backdrop-blur-sm text-dark-bg text-[10px] font-bold rounded-md shadow-sm">
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          {product.images.length}
+        </span>
+      </div>
+    )}
+  </div>
+
+  <!-- Product Info -->
+  <div class="p-3 sm:p-4">
+    <h3 class="text-xs sm:text-sm font-bold text-dark-bg mb-2 sm:mb-3 line-clamp-2 leading-snug min-h-[2rem] sm:min-h-[2.5rem] group-hover:text-primary transition-colors duration-200">{displayName}</h3>
+
+    <div class="space-y-2">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between text-[10px] sm:text-xs">
+        <span class="text-muted font-medium">{t.products?.cardBrand || 'Marka'}</span>
+        <span class="text-dark-bg font-semibold">{product.brand}</span>
+      </div>
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between text-[10px] sm:text-xs mt-1 sm:mt-0">
+        <span class="text-muted font-medium">{t.products?.cardOem || 'OEM Kodu'}</span>
+        <span class="text-dark-bg font-mono font-semibold text-[11px]">{product.oem}</span>
+      </div>
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between text-[10px] sm:text-xs mt-1 sm:mt-0">
+        <span class="text-muted font-medium">{t.products?.cardCode || 'Ürün Kodu'}</span>
+        <span class="text-primary font-mono font-bold text-[11px]">{product.code}</span>
+      </div>
+    </div>
+  </div>
+</a>

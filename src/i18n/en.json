@@ -1,0 +1,422 @@
+{
+  "site": {
+    "name": "KADA Oto Radyatör",
+    "tagline": "Trusted Cooling Solutions Since 1983",
+    "description": "KADA Oto Radyatör — Turkish radiator manufacturer exporting to 35 countries with 3M+ units produced since 1983.",
+    "pageTitle": "KADA Auto Radiator | Manufacturer Since 1983",
+    "pageDescription": "Turkish radiator manufacturer since 1983. Exporting to 35 countries, 500+ dealers. Request a quote today."
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "quality": "Quality",
+    "network": "Network",
+    "technicalData": "Technical Data",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "getQuote": "Request a Quote"
+  },
+  "hero": {
+    "titleLine1": "EVERY VEHICLE. EVERY CONDITION.",
+    "titleLine2": "KADA.",
+    "subtitle": "Turkish radiator manufacturer exporting to 35 countries since 1983.",
+    "cta": "Explore Products",
+    "ctaSecondary": "Request a Quote"
+  },
+  "stats": {
+    "years": "Years of Experience",
+    "countries": "Export Countries",
+    "dealers": "Authorized Dealers",
+    "units": "Units Produced"
+  },
+  "products": {
+    "pageTitle": "Our Products | KADA Radiator",
+    "pageDescription": "Radiator cores, intercoolers, oil coolers. Cooling solutions for passenger, commercial, agricultural, and industrial vehicles. Get a quote.",
+    "related": "Related Products",
+    "viewAll": "View All Products →",
+    "searchPlaceholder": "Search by OEM code, part number or brand...",
+    "allCategories": "All Categories",
+    "productsListed": "{count} products listed",
+    "cardBrand": "Brand",
+    "cardOem": "OEM Code",
+    "cardCode": "Part Number",
+    "cardCategory": "Category",
+    "cardImages": "Images",
+    "cardPcs": "pcs",
+    "heading": "Our Product Categories",
+    "subheading": "We offer solutions for vehicle and industrial cooling needs with our wide product range.",
+    "quoteCta": "Quote Form",
+    "quoteHeading": "Request a Quote",
+    "quoteDescription": "Fill out the form to get information about the product you need.",
+    "categories": {
+      "radiatorCores": {
+        "name": "Radiator Cores",
+        "description": "High-performance radiator cores manufactured from premium copper and aluminum materials. Suitable for all vehicle types, ranging from passenger cars to heavy-duty industrial machinery. Custom manufacturing options are available based on specific dimensions and technical requirements."
+      },
+      "fullRadiators": {
+        "name": "Full Radiators",
+        "description": "Ready-to-install, complete radiator units manufactured to OEM standards. Provides maximum engine protection even in harsh conditions thanks to superior cooling capacity and durable construction. Meets all market demands with a comprehensive product range."
+      },
+      "intercoolers": {
+        "name": "Intercoolers",
+        "description": "High-efficiency air-to-air and air-to-water intercooler systems designed for turbocharged and supercharged engines. Maximizes engine performance and fuel efficiency by increasing the density of intake air. Perfectly suited for all commercial and industrial vehicles."
+      },
+      "oilCoolers": {
+        "name": "Oil Coolers",
+        "description": "Advanced oil cooling solutions ensuring optimal operating temperatures for engine and transmission systems. Prevents overheating, significantly reducing mechanical wear and extending component lifespan. Built with durable materials to withstand high pressure and tough working environments."
+      },
+      "acRadiators": {
+        "name": "AC Radiators",
+        "description": "Specially developed condenser and evaporator units for vehicle climate control systems. Offers rapid heat transfer to provide ideal cabin comfort throughout all seasons. Leak-tested, highly reliable, and designed for a long service life."
+      },
+      "industrialCoolers": {
+        "name": "Industrial Coolers",
+        "description": "Heavy-duty cooling systems engineered for industrial machinery, generators, and large-scale facilities. Delivers superior thermal management in demanding environments requiring continuous operation. Fully customizable designs supported by project-specific engineering."
+      },
+      "heaters": {
+        "name": "Heaters",
+        "description": "Compact and highly efficient heater cores designed for vehicle cabin heating systems. Guarantees rapid and effective heating performance even in extreme cold weather conditions. Features easy installation and is crafted from materials with excellent thermal conductivity."
+      },
+      "aftercoolers": {
+        "name": "Aftercoolers",
+        "description": "High-tech aftercooler units designed for air compressors and industrial compressed air systems. Removes excess heat generated after compression to maintain system efficiency and prevent condensation. Compact design and rugged construction help reduce maintenance costs."
+      }
+    }
+  },
+  "about": {
+    "pageTitle": "About Us | KADA Auto Radiator",
+    "pageDescription": "Manufacturing in Istanbul since 1983. 43 years experience, ISO 9001:2015 certified, 7,000 m² facility. Turkey's leading radiator producer.",
+    "heading": "About Us",
+    "story": {
+      "title": "Our Story",
+      "p1": "KADA Auto Radiator was founded in 1983 in Güneşli, Istanbul, as a small workshop driven by a passion for quality and craftsmanship in the radiator industry. That founding commitment has grown into one of Turkey's leading radiator manufacturers.",
+      "p2": "With over 43 years of experience, we manufacture copper, aluminum, and brass-based cooling products across a 7,000 m² production facility equipped with state-of-the-art CNC machinery. Our ISO 9001:2015 certification reflects our unwavering commitment to international quality standards.",
+      "p3": "Today, KADA exports to 35 countries and serves over 500 authorized dealers. Our product range covers passenger vehicles, commercial trucks, agricultural machinery, forklifts, and industrial generators — delivering reliable cooling solutions for every application."
+    },
+    "values": {
+      "title": "Our Values",
+      "quality": {
+        "title": "Quality",
+        "description": "International standards in every product."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Innovative cooling solutions through continuous R&D."
+      },
+      "trust": {
+        "title": "Trust",
+        "description": "Customer confidence backed by 43 years of experience."
+      },
+      "global": {
+        "title": "Global Reach",
+        "description": "Strong dealer network across 35 countries."
+      }
+    },
+    "process": {
+      "title": "OUR PRODUCTION PROCESS",
+      "steps": [
+        {
+          "title": "Engineering and 3D Modeling (OEM Matching)",
+          "description": "Based on original OEM codes and master demands, parts and casting tanks designs are digitized with 100% precision in SolidWorks environment."
+        },
+        {
+          "title": "Certified Raw Material Analysis",
+          "description": "First-class copper, brass, and aluminum sheets with high thermal conductivity are taken from international certified suppliers to melting and testing stages."
+        },
+        {
+          "title": "CNC Embossing and Molding (Core Manufacturing)",
+          "description": "In our state-of-the-art CNC machines, vertical circulation tubes and core fins, which form the heart of the radiator, are bent millimetrically with special molds."
+        },
+        {
+          "title": "Robotic Integrated Assembly and Welding",
+          "description": "Shroud sheets, side plates, and water tanks are assembled in robotic welding lines resistant to shock and high pressure before powder coating."
+        },
+        {
+          "title": "Hardcore Pressure and Leakage Tests",
+          "description": "Every radiator produced is subjected to water tightness and thermal simulation tests under high bar pressure for durability against tough construction site and military terrain conditions."
+        },
+        {
+          "title": "Protective Packaging and Global Logistics",
+          "description": "Input-output fittings are closed with green protective plugs, and part series placed in special thick packaging boxes are safely shipped throughout Turkey and to 35 countries."
+        }
+      ]
+    },
+    "factory": {
+      "title": "OUR FACTORY",
+      "stats": [
+        {
+          "value": "7,000 m²",
+          "label": "Indoor Production Area"
+        },
+        {
+          "value": "1983",
+          "label": "Year Established"
+        },
+        {
+          "value": "Istanbul",
+          "label": "Güneşli, Turkey"
+        }
+      ]
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "To create value for our customers by producing cooling solutions at the highest quality standards and to be a trusted brand in the global market."
+    }
+  },
+  "quality": {
+    "pageTitle": "Quality & Certifications | KADA Radiator",
+    "pageDescription": "ISO 9001:2015 certified production. Every product passes pressure, leak and thermal testing to meet international quality standards.",
+    "heading": "Quality and Certifications",
+    "subheading": "Manufacturing at international standards with rigorous quality control and continuous improvement.",
+    "standards": {
+      "title": "Our Quality Standards",
+      "iso9001": {
+        "title": "ISO 9001:2015",
+        "description": "All production processes managed at international standards with Quality Management System certification."
+      },
+      "iso14001": {
+        "title": "ISO 14001:2015",
+        "description": "Environmentally conscious production with Environmental Management System certification."
+      },
+      "iatf": {
+        "title": "IATF 16949",
+        "description": "Manufacturing at OEM standards with automotive-specific quality management system."
+      }
+    },
+    "testing": {
+      "title": "Our Testing Processes",
+      "pressure": {
+        "title": "Pressure Testing",
+        "description": "Every unit undergoes pressure testing after production."
+      },
+      "leak": {
+        "title": "Leak Testing",
+        "description": "Quality assurance with advanced leak detection systems."
+      },
+      "thermal": {
+        "title": "Thermal Testing",
+        "description": "Thermal cycle testing for performance and durability."
+      }
+    },
+    "isoSection": {
+      "label": "QUALITY MANAGEMENT SYSTEM",
+      "heading": "ISO 9001:2015",
+      "p1": "As Turkey's leading ISO 9001:2015 certified radiator manufacturer, our certificate approved by DQS is an independent assurance that our production processes meet international quality standards.",
+      "p2": "This document certifies that in our quality-assured radiator manufacturing, every stage from raw material procurement to production, quality control, and delivery is systematically managed.",
+      "p3": "Thanks to our DQS-approved production approach, our customers receive guaranteed consistent quality, reliable delivery, and a traceable process with every order.",
+      "badgeTitle": "ISO 9001:2015",
+      "badgeSubtitle": "DQS Certified",
+      "badgeText": "Internationally Valid Certificate",
+      "certTr": "Download Certificate (TR)",
+      "certEn": "Download Certificate (EN)",
+      "certIq": "IQNet Certificate"
+    },
+    "testingSection": {
+      "title": "OUR TESTING PROCESSES",
+      "pressure": {
+        "title": "Pressure Testing",
+        "description": "Every radiator unit undergoes high-pressure testing after production. Conducted above standard operating pressures, this test detects any potential structural weaknesses before delivery. No product is shipped without passing this test.",
+        "stat": "100% of Products Tested"
+      },
+      "leak": {
+        "title": "Leak Testing",
+        "description": "Our advanced leak detection systems identify even micro-level leaks. Every joint and weld line is individually inspected. Guaranteed leak-tightness is a standard for all our products.",
+        "stat": "Micron-Precision Inspection"
+      },
+      "thermal": {
+        "title": "Thermal Endurance Testing",
+        "description": "Our products are subjected to extreme temperature cycles to test thermal expansion and durability. These tests simulate actual field conditions to guarantee long-lasting performance.",
+        "stat": "Real Field Condition Simulation"
+      }
+    },
+    "importanceSection": {
+      "title": "WHY IS QUALITY IMPORTANT?",
+      "stat1": {
+        "value": "43+",
+        "label": "Years of Quality Experience"
+      },
+      "stat2": {
+        "value": "100%",
+        "label": "Product Test Rate"
+      },
+      "stat3": {
+        "value": "35",
+        "label": "Countries Trust Our Quality"
+      }
+    },
+    "faqSection": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "What is the scope of KADA's ISO certification?",
+          "answer": "KADA Auto Radiator holds the ISO 9001:2015 Quality Management System certificate approved by DQS. This certificate covers all our production processes."
+        },
+        {
+          "question": "What tests do your products undergo?",
+          "answer": "Every product is shipped after passing pressure testing, leak testing, and thermal endurance testing."
+        },
+        {
+          "question": "How can I verify your quality certificates?",
+          "answer": "Our ISO 9001:2015 certificate is issued by DQS, and a copy of the document can be provided upon request."
+        }
+      ]
+    }
+  },
+  "network": {
+    "pageTitle": "Sales Network & Export | KADA Radiator",
+    "pageDescription": "500+ authorized dealers in Turkey, exporting to 35 countries. KADA's global network delivers reliable cooling solutions worldwide.",
+    "heading": "Our Sales & Export Network",
+    "subheading": "Serving globally with over 500 authorized dealers in 35 countries.",
+    "domestic": {
+      "title": "Our Domestic Network",
+      "description": "Extensive sales and service network with over 300 authorized dealers throughout Turkey."
+    },
+    "export": {
+      "title": "Our Export Markets",
+      "description": "We export to 35 countries, primarily in Europe, Middle East, Africa, and Central Asia.",
+      "regions": {
+        "europe": "Europe",
+        "middleEast": "Middle East",
+        "africa": "Africa",
+        "centralAsia": "Central Asia"
+      }
+    },
+    "cta": "Contact us to find a dealer in your region."
+  },
+  "technicalData": {
+    "pageTitle": "Technical Data | KADA Auto Radiator",
+    "pageDescription": "Technical specifications, material data and production standards for KADA radiator products. Detailed technical documentation.",
+    "heading": "Technical Data",
+    "subheading": "Technical specifications and performance parameters of our products.",
+    "materials": {
+      "title": "Materials",
+      "copper": "Copper",
+      "aluminum": "Aluminum",
+      "brass": "Brass",
+      "steel": "Steel"
+    },
+    "specs": {
+      "title": "Technical Specifications",
+      "material": "Material",
+      "dimensions": "Dimensions",
+      "weight": "Weight",
+      "capacity": "Capacity",
+      "pressure": "Operating Pressure",
+      "temperature": "Operating Temperature"
+    },
+    "download": "Download technical catalog"
+  },
+  "faq": {
+    "pageTitle": "FAQ | KADA Auto Radiator",
+    "pageDescription": "Answers to common questions about radiator maintenance, replacement and KADA products. Find quick answers in our FAQ section.",
+    "heading": "Frequently Asked Questions",
+    "subheading": "Find answers to the most commonly asked questions here.",
+    "items": [
+      {
+        "question": "What types of cooling products does KADA manufacture?",
+        "answer": "KADA has a wide product range including radiator cores, full radiators, intercoolers, oil coolers, AC radiators, industrial coolers, heaters, and aftercoolers."
+      },
+      {
+        "question": "Is there a minimum order quantity?",
+        "answer": "Minimum order quantities vary by product category. Please contact our sales team for detailed information."
+      },
+      {
+        "question": "Which countries do you export to?",
+        "answer": "We export to 35 countries, primarily in Europe, Middle East, Africa, and Central Asia."
+      },
+      {
+        "question": "What is the warranty period for your products?",
+        "answer": "Our products are covered under warranty depending on usage conditions. Please contact our sales team for details."
+      },
+      {
+        "question": "Do you offer OEM manufacturing?",
+        "answer": "Yes, we provide OEM manufacturing services according to customer specifications."
+      },
+      {
+        "question": "What is the delivery time?",
+        "answer": "Delivery time is 2-4 weeks for standard products and 4-8 weeks for custom manufacturing."
+      }
+    ],
+    "cta": {
+      "title": "Couldn't find the answer you're looking for?",
+      "subtitle": "Contact us directly.",
+      "button": "Contact Us →"
+    }
+  },
+  "contact": {
+    "pageTitle": "Contact & Quote | KADA Auto Radiator",
+    "pageDescription": "Get in touch with KADA Auto Radiator. Fill out the form to request a quote, get product info or apply to become an authorized dealer.",
+    "heading": "Get in Touch With Us",
+    "subheading": "Reach out for questions, quote requests, or dealership applications.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company Name",
+      "subject": "Subject",
+      "message": "Your Message",
+      "product": "Related Product",
+      "submit": "Submit",
+      "success": "Your message has been sent. We will get back to you shortly.",
+      "error": "An error occurred. Please try again or call us.",
+      "sending": "Sending...",
+      "selectProduct": "Select a product",
+      "subjects": {
+        "quote": "Quote Request",
+        "technical": "Technical Support",
+        "dealer": "Dealership Application",
+        "other": "Other"
+      }
+    },
+    "info": {
+      "address": "Address",
+      "addressValue": "15 Temmuz, 1438. Sk. No:28, 34212 Bağcılar/İstanbul",
+      "phone": "Phone",
+      "phoneValue": "+90 212 657 97 70",
+      "email": "Email",
+      "emailValue": "info@kadaradiator.com",
+      "workingHours": "Working Hours",
+      "workingHoursValue": "Monday - Friday: 08:30 - 18:00"
+    }
+  },
+  "testimonials": {
+    "title": "What Our Customers Say",
+    "items": [
+      {
+        "name": "Mehmet Yılmaz",
+        "company": "Yılmaz Automotive",
+        "text": "We've been working with KADA for 15 years. Product quality and delivery reliability are unmatched."
+      },
+      {
+        "name": "Ahmet Demir",
+        "company": "Demir Machinery",
+        "text": "KADA's technical support and product quality in industrial cooling solutions have always satisfied us."
+      },
+      {
+        "name": "Ali Kara",
+        "company": "Kara Export",
+        "text": "A reliable supplier for our export operations. On-time delivery and consistent quality."
+      }
+    ]
+  },
+  "footer": {
+    "description": "Trusted Turkish manufacturer producing automotive and industrial cooling solutions since 1983.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Information",
+    "rights": "All rights reserved.",
+    "address": "15 Temmuz, 1438. Sk. No:28, 34212 Bağcılar/İstanbul"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "backToHome": "Back to Home",
+    "loading": "Loading...",
+    "required": "Required field",
+    "simpleCta": {
+      "title": "Would you like to get a quote?",
+      "subtitle": "Fill out our form and we'll get right back to you.",
+      "button": "Get a Quote →"
+    }
+  }
+}

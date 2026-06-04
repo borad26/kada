@@ -1,0 +1,4 @@
+window.__KADA_FORM_CONFIG = {
+  k: "NDEwNGNmODMtZjU2OC00MjkyLWFmZDUtMjEwZTQ5M2NlOWMy",
+  e: "aHR0cHM6Ly9hcGkud2ViM2Zvcm1zLmNvbS9zdWJtaXQ="
+};

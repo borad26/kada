@@ -1,0 +1,23 @@
+---
+import { getTranslations, localizedPath, type Locale } from '../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = getTranslations(locale);
+---
+
+<section class="py-16 md:py-24 bg-[#1A1E1B] text-center border-t border-[rgba(255,255,255,0.05)]">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl md:text-4xl font-heading text-[#ECECEC] mb-4">{t.common.simpleCta.title}</h2>
+    <p class="text-lg text-[#8A9490] mb-8">{t.common.simpleCta.subtitle}</p>
+    <a
+      href={localizedPath('/contact', locale)}
+      class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary hover:bg-primary-dark text-white font-bold rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-lg shadow-primary/20"
+    >
+      {t.common.simpleCta.button}
+    </a>
+  </div>
+</section>

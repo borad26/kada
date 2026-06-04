@@ -1,0 +1,422 @@
+{
+  "site": {
+    "name": "KADA Oto Radyatör",
+    "tagline": "1983'ten Beri Güvenilir Soğutma Çözümleri",
+    "description": "KADA Oto Radyatör — 1983'ten beri 35 ülkeye ihracat yapan, 3 milyondan fazla ünite üreten Türk radyatör üreticisi.",
+    "pageTitle": "KADA Oto Radyatör | Radyatör Üreticisi",
+    "pageDescription": "1983'ten bu yana Türkiye'nin güvenilir radyatör üreticisi. 35 ülkeye ihracat, 500+ bayi. Hemen teklif alın."
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "products": "Ürünler",
+    "about": "Hakkımızda",
+    "quality": "Kalite",
+    "network": "Satış Ağı",
+    "technicalData": "Teknik Veriler",
+    "faq": "SSS",
+    "contact": "İletişim",
+    "getQuote": "Teklif Al"
+  },
+  "hero": {
+    "titleLine1": "HER ARAÇ. HER KOŞUL.",
+    "titleLine2": "KADA.",
+    "subtitle": "1983'ten bu yana 35 ülkeye ihracat yapan Türk radyatör üreticisi.",
+    "cta": "Ürünleri Keşfedin",
+    "ctaSecondary": "Teklif İsteyin"
+  },
+  "stats": {
+    "years": "Yıllık Deneyim",
+    "countries": "İhracat Ülkesi",
+    "dealers": "Yetkili Bayi",
+    "units": "Üretilen Ünite"
+  },
+  "products": {
+    "pageTitle": "Ürünlerimiz | KADA Oto Radyatör",
+    "pageDescription": "Radyatör petekleri, intercooler, yağ soğutucuları. Binek, ticari, zirai ve endüstriyel araçlar için soğutma çözümleri. Teklif alın.",
+    "related": "İlgili Ürünler",
+    "viewAll": "Tüm Ürünleri Gör →",
+    "searchPlaceholder": "OEM kodu, ürün kodu veya marka ile arayın...",
+    "allCategories": "Tüm Kategoriler",
+    "productsListed": "{count} ürün listeleniyor",
+    "cardBrand": "Marka",
+    "cardOem": "OEM Kodu",
+    "cardCode": "Ürün Kodu",
+    "cardCategory": "Kategori",
+    "cardImages": "Görseller",
+    "cardPcs": "adet",
+    "heading": "Ürün Kategorilerimiz",
+    "subheading": "Geniş ürün yelpazemiz ile araç ve endüstriyel soğutma ihtiyaçlarınıza çözüm sunuyoruz.",
+    "quoteCta": "Teklif Formu",
+    "quoteHeading": "Teklif İsteyin",
+    "quoteDescription": "İhtiyacınız olan ürün hakkında bilgi almak için formu doldurun.",
+    "categories": {
+      "radiatorCores": {
+        "name": "Radyatör Çekirdekleri",
+        "description": "Bakır ve alüminyum malzemelerden üretilen yüksek performanslı radyatör petekleri. Binek araçlardan ağır iş makinelerine kadar her araç tipine uygun üretim yapılmaktadır. Özel ölçü ve teknik gereksinimlere göre imalat imkânı mevcuttur."
+      },
+      "fullRadiators": {
+        "name": "Komple Radyatörler",
+        "description": "Montaja hazır, OEM standartlarında üretilmiş komple radyatör üniteleri. Üstün soğutma kapasitesi ve uzun ömürlü yapısıyla zorlu koşullarda bile maksimum motor koruması sağlar. Geniş ürün yelpazesi ile pazarın tüm ihtiyaçlarına cevap verir."
+      },
+      "intercoolers": {
+        "name": "İntercooler",
+        "description": "Turboşarjlı ve süperşarjlı motorlar için tasarlanmış yüksek verimli hava-hava ve hava-su intercooler sistemleri. Yanma odasına giren havanın yoğunluğunu artırarak motor performansını ve yakıt verimliliğini maksimize eder. Tüm endüstriyel ve ticari araçlar için uygundur."
+      },
+      "oilCoolers": {
+        "name": "Yağ Soğutucuları",
+        "description": "Motor ve şanzıman sistemlerinin optimum sıcaklıkta çalışmasını sağlayan gelişmiş yağ soğutucuları. Aşırı ısınmayı önleyerek mekanik parçaların aşınmasını azaltır ve ömrünü uzatır. Dayanıklı malzemeleri sayesinde yüksek basınca ve zorlu çalışma şartlarına tam uyumludur."
+      },
+      "acRadiators": {
+        "name": "Klima Radyatörleri",
+        "description": "Araç iklimlendirme sistemleri için özel olarak geliştirilmiş kondenser ve evaporatör üniteleri. Hızlı ısı transferi sağlayarak kabin içinde her mevsim ideal konforu sunar. Sızdırmazlık testlerinden geçirilmiş, güvenilir ve uzun ömürlü çözümlerdir."
+      },
+      "industrialCoolers": {
+        "name": "Endüstriyel Soğutucular",
+        "description": "Ağır iş makineleri, jeneratörler ve endüstriyel tesisler için tasarlanmış dev boyutlu soğutma sistemleri. Kesintisiz çalışma gerektiren zorlu endüstriyel ortamlarda üstün termal yönetim sağlar. Projeye özel mühendislik çalışmalarıyla tamamen özelleştirilebilir tasarımlar sunulur."
+      },
+      "heaters": {
+        "name": "Kalorifer Radyatörleri",
+        "description": "Araç kabin içi ısıtma sistemlerinde kullanılmak üzere tasarlanmış kompakt ve verimli kalorifer petekleri. Soğuk hava koşullarında bile hızlı ve etkili ısıtma performansı garanti eder. Kolay montaj imkanı ve yüksek ısı iletkenliğine sahip malzemelerle üretilmiştir."
+      },
+      "aftercoolers": {
+        "name": "Aftercooler",
+        "description": "Hava kompresörleri ve endüstriyel basınçlı hava sistemleri için yüksek teknolojili aftercooler üniteleri. Sıkıştırma sonrası oluşan fazla ısıyı atarak sistem verimliliğini korur ve yoğuşmayı önler. Kompakt tasarımı ve dayanıklı yapısıyla bakım maliyetlerini düşürür."
+      }
+    }
+  },
+  "about": {
+    "pageTitle": "Hakkımızda | KADA Oto Radyatör",
+    "pageDescription": "1983'ten İstanbul'da üretim. 43 yıl tecrübe, ISO 9001:2015 sertifikası, 7.000 m² tesis. Türkiye'nin önde gelen radyatör üreticisi.",
+    "heading": "Hakkımızda",
+    "story": {
+      "title": "Hikayemiz",
+      "p1": "KADA Oto Radyatör, 1983 yılında İstanbul Güneşli'de küçük bir atölye olarak kuruldu. Kurucularımızın radyatör sektörüne olan tutkusu ve kaliteye olan bağlılığı, firmamızı bugün Türkiye'nin önde gelen radyatör üreticilerinden biri haline getirdi.",
+      "p2": "43 yılı aşkın tecrübemizle bakır, alüminyum ve pirinç bazlı soğutma ürünleri üretmekteyiz. 7.000 m² kapalı üretim alanımızda, son teknoloji CNC tezgahları ve özel kalıplarla her araç tipine uygun yüksek kaliteli ürünler üretiyoruz. ISO 9001:2015 sertifikamız, kalite standartlarımızın uluslararası alanda tanınmasının bir göstergesidir.",
+      "p3": "Bugün 35 ülkeye ihracat yapan ve 500'den fazla yetkili bayisi bulunan KADA, binek araçlardan ağır iş makinelerine, zirai araçlardan jeneratörlere kadar geniş bir ürün yelpazesiyle hizmet vermektedir. Her geçen yıl büyüyen ihracat ağımız ve artan bayi sayımızla dünya pazarında güvenilir bir marka olmaya devam ediyoruz."
+    },
+    "values": {
+      "title": "Değerlerimiz",
+      "quality": {
+        "title": "Kalite",
+        "description": "Her üründe uluslararası standartlarda kalite."
+      },
+      "innovation": {
+        "title": "İnovasyon",
+        "description": "Sürekli AR-GE ile yenilikçi soğutma çözümleri."
+      },
+      "trust": {
+        "title": "Güven",
+        "description": "43 yıllık deneyimin getirdiği müşteri güveni."
+      },
+      "global": {
+        "title": "Küresel Erişim",
+        "description": "35 ülkede güçlü bayi ağı."
+      }
+    },
+    "process": {
+      "title": "ÜRETİM SÜRECİMİZ",
+      "steps": [
+        {
+          "title": "Mühendislik ve 3D Modelleme (OEM Eşleştirme)",
+          "description": "Orijinal OEM kodlarına ve usta taleplerine göre parça ve döküm kazan tasarımları SolidWorks ortamında %100 hassasiyetle dijitalleştirilir."
+        },
+        {
+          "title": "Sertifikalı Ham Madde Analizi",
+          "description": "Yüksek ısıl iletkenliğe sahip birinci sınıf bakır, pirinç ve alüminyum levhalar, uluslararası sertifikalı tedarikçilerden ergitme ve test aşamasına alınır."
+        },
+        {
+          "title": "CNC Gofraj ve Kalıplama (Petek İmalatı)",
+          "description": "En son teknoloji CNC tezgahlarımızda, radyatörün kalbini oluşturan dikey sirkülasyon boruları ve petek finleri özel kalıplarla milimetrik olarak bükülür."
+        },
+        {
+          "title": "Robotik Entegre Montaj ve Kaynak",
+          "description": "Davlumbaz sacları, yan pleytler ve su kazanları, fırın boya öncesi sarsıntıya ve yüksek basınca dayanıklı robotik kaynak hatlarında birleştirilir."
+        },
+        {
+          "title": "Hardcore Basınç ve Sızıntı Testleri",
+          "description": "Üretilen her radyatör, zorlu şantiye ve askeri arazi koşullarına dayanıklılık için yüksek bar basınç altında su sızdırmazlık ve termal simülasyon testlerine tabi tutulur."
+        },
+        {
+          "title": "Koruyucu Ambalaj ve Küresel Lojistik",
+          "description": "Giriş-çıkış rekorları yeşil koruyucu tapalarla kapatılan, özel kalın ambalaj kutularına yerleştirilen parça serileri Türkiye geneline ve 35 ülkeye güvenle sevk edilir."
+        }
+      ]
+    },
+    "factory": {
+      "title": "FABRİKAMIZ",
+      "stats": [
+        {
+          "value": "7.000 m²",
+          "label": "Kapalı Üretim Alanı"
+        },
+        {
+          "value": "1983",
+          "label": "Kuruluş Yılı"
+        },
+        {
+          "value": "İstanbul",
+          "label": "Güneşli, Türkiye"
+        }
+      ]
+    },
+    "mission": {
+      "title": "Misyonumuz",
+      "text": "En yüksek kalite standartlarında soğutma çözümleri üreterek, müşterilerimize değer katmak ve dünya pazarında güvenilir bir marka olmak."
+    }
+  },
+  "quality": {
+    "pageTitle": "Kalite & Sertifikalar | KADA Radyatör",
+    "pageDescription": "ISO 9001:2015 sertifikalı üretim. Her ürün basınç, sızıntı ve termal testlerden geçer. Uluslararası kalite standartları.",
+    "heading": "Kalite ve Sertifikalar",
+    "subheading": "Uluslararası standartlarda üretim, titiz kalite kontrol ve sürekli iyileştirme.",
+    "standards": {
+      "title": "Kalite Standartlarımız",
+      "iso9001": {
+        "title": "ISO 9001:2015",
+        "description": "Kalite Yönetim Sistemi sertifikası ile tüm üretim süreçlerimiz uluslararası standartlarda yönetilmektedir."
+      },
+      "iso14001": {
+        "title": "ISO 14001:2015",
+        "description": "Çevre Yönetim Sistemi sertifikası ile çevreye duyarlı üretim gerçekleştiriyoruz."
+      },
+      "iatf": {
+        "title": "IATF 16949",
+        "description": "Otomotiv sektörüne özel kalite yönetim sistemi ile OEM standartlarında üretim."
+      }
+    },
+    "testing": {
+      "title": "Test Süreçlerimiz",
+      "pressure": {
+        "title": "Basınç Testi",
+        "description": "Her ünite üretim sonrası basınç testinden geçirilir."
+      },
+      "leak": {
+        "title": "Sızıntı Testi",
+        "description": "Gelişmiş sızıntı tespit sistemleri ile kalite güvencesi."
+      },
+      "thermal": {
+        "title": "Termal Test",
+        "description": "Performans ve dayanıklılık için termal döngü testleri."
+      }
+    },
+    "isoSection": {
+      "label": "KALİTE YÖNETİM SİSTEMİ",
+      "heading": "ISO 9001:2015",
+      "p1": "Türkiye'nin öncü ISO 9001:2015 sertifikalı radyatör üreticisi olarak, DQS tarafından onaylanan sertifikamız, üretim süreçlerimizin uluslararası kalite standartlarını karşıladığının bağımsız bir güvencesidir.",
+      "p2": "Bu belge, kalite güvenceli radyatör imalatımızda; hammadde temininden üretime, kalite kontrolden teslimatına kadar her aşamanın sistematik biçimde yönetildiğini belgeler.",
+      "p3": "DQS onaylı üretim yaklaşımımız sayesinde müşterilerimiz her siparişte tutarlı kalite, güvenilir teslimat ve izlenebilir süreç garantisi alır.",
+      "badgeTitle": "ISO 9001:2015",
+      "badgeSubtitle": "DQS Certified",
+      "badgeText": "Uluslararası Geçerli Sertifika",
+      "certTr": "Sertifikayı İndir (TR)",
+      "certEn": "Sertifikayı İndir (EN)",
+      "certIq": "IQNet Sertifikası"
+    },
+    "testingSection": {
+      "title": "TEST SÜREÇLERİMİZ",
+      "pressure": {
+        "title": "Basınç Testi",
+        "description": "Her radyatör ünitesi üretim sonrası yüksek basınç testinden geçirilir. Standart çalışma basıncının üzerinde uygulanan test, olası yapısal zayıflıkları teslimat öncesinde tespit eder. Testten geçemeyen hiçbir ürün sevk edilmez.",
+        "stat": "% 100 Ürün Test Edilir"
+      },
+      "leak": {
+        "title": "Sızıntı Testi",
+        "description": "Gelişmiş sızıntı tespit sistemlerimiz mikro düzeydeki kaçakları bile saptar. Her birleşim noktası ve kaynak hattı tek tek kontrol edilir. Sızdırmazlık garantisi tüm ürünlerimiz için standarttır.",
+        "stat": "Mikron Hassasiyetinde Kontrol"
+      },
+      "thermal": {
+        "title": "Termal Dayanıklılık Testi",
+        "description": "Ürünlerimiz aşırı sıcaklık döngülerine tabi tutularak termal genleşme ve dayanıklılık test edilir. Gerçek saha koşullarını simüle eden testler, uzun ömürlü performansı garanti eder.",
+        "stat": "Gerçek Saha Koşulları Simülasyonu"
+      }
+    },
+    "importanceSection": {
+      "title": "KALİTE NEDEN ÖNEMLİ?",
+      "stat1": {
+        "value": "43+",
+        "label": "Yıllık Kalite Deneyimi"
+      },
+      "stat2": {
+        "value": "% 100",
+        "label": "Ürün Test Oranı"
+      },
+      "stat3": {
+        "value": "35",
+        "label": "Ülkede Güvenilen Kalite"
+      }
+    },
+    "faqSection": {
+      "title": "Sık Sorulan Sorular",
+      "items": [
+        {
+          "question": "KADA'nın ISO sertifikası hangi kapsamı içeriyor?",
+          "answer": "KADA Oto Radyatör, DQS tarafından onaylanan ISO 9001:2015 Kalite Yönetim Sistemi sertifikasına sahiptir. Bu sertifika tüm üretim süreçlerini kapsar."
+        },
+        {
+          "question": "Ürünleriniz hangi testlerden geçiyor?",
+          "answer": "Her ürün basınç testi, sızıntı testi ve termal dayanıklılık testinden geçerek sevk edilir."
+        },
+        {
+          "question": "Kalite belgelerinizi nasıl doğrulayabilirim?",
+          "answer": "ISO 9001:2015 sertifikamız DQS tarafından verilmiş olup talep halinde belge kopyası temin edilebilir."
+        }
+      ]
+    }
+  },
+  "network": {
+    "pageTitle": "Satış Ağı & İhracat | KADA Radyatör",
+    "pageDescription": "Türkiye'de 500+ yetkili bayi, 35 ülkeye ihracat. KADA'nın global ağıyla her ihtiyacınıza yakın çözüm.",
+    "heading": "Satış ve İhracat Ağımız",
+    "subheading": "35 ülkede 500'den fazla yetkili bayi ile dünya genelinde hizmet veriyoruz.",
+    "domestic": {
+      "title": "Yurt İçi Ağımız",
+      "description": "Türkiye genelinde 300'den fazla yetkili bayi ile geniş bir satış ve servis ağına sahibiz."
+    },
+    "export": {
+      "title": "İhracat Pazarlarımız",
+      "description": "Avrupa, Orta Doğu, Afrika ve Orta Asya başta olmak üzere 35 ülkeye ihracat gerçekleştiriyoruz.",
+      "regions": {
+        "europe": "Avrupa",
+        "middleEast": "Orta Doğu",
+        "africa": "Afrika",
+        "centralAsia": "Orta Asya"
+      }
+    },
+    "cta": "Bölgenizdeki bayimizi bulmak için bizimle iletişime geçin."
+  },
+  "technicalData": {
+    "pageTitle": "Teknik Veriler | KADA Oto Radyatör",
+    "pageDescription": "KADA radyatör ürünlerinin teknik özellikleri, malzeme bilgileri ve üretim standartları. Detaylı teknik dokümantasyon.",
+    "heading": "Teknik Veriler",
+    "subheading": "Ürünlerimizin teknik özellikleri ve performans parametreleri.",
+    "materials": {
+      "title": "Malzemeler",
+      "copper": "Bakır",
+      "aluminum": "Alüminyum",
+      "brass": "Pirinç",
+      "steel": "Çelik"
+    },
+    "specs": {
+      "title": "Teknik Özellikler",
+      "material": "Malzeme",
+      "dimensions": "Boyutlar",
+      "weight": "Ağırlık",
+      "capacity": "Kapasite",
+      "pressure": "Çalışma Basıncı",
+      "temperature": "Çalışma Sıcaklığı"
+    },
+    "download": "Teknik katalogu indirin"
+  },
+  "faq": {
+    "pageTitle": "Sık Sorulan Sorular | KADA Radyatör",
+    "pageDescription": "Radyatör bakımı, değişimi ve KADA ürünleri hakkında en çok sorulan sorular. Hızlı cevaplar için SSS sayfamızı inceleyin.",
+    "heading": "Sıkça Sorulan Sorular",
+    "subheading": "En çok sorulan soruların yanıtlarını burada bulabilirsiniz.",
+    "items": [
+      {
+        "question": "KADA hangi tür soğutma ürünleri üretmektedir?",
+        "answer": "KADA, radyatör çekirdekleri, komple radyatörler, intercooler, yağ soğutucuları, klima radyatörleri, endüstriyel soğutucular, kalorifer radyatörleri ve aftercooler olmak üzere geniş bir ürün yelpazesine sahiptir."
+      },
+      {
+        "question": "Sipariş için minimum adet var mı?",
+        "answer": "Minimum sipariş adetleri ürün kategorisine göre değişmektedir. Detaylı bilgi için satış ekibimizle iletişime geçebilirsiniz."
+      },
+      {
+        "question": "Hangi ülkelere ihracat yapıyorsunuz?",
+        "answer": "Avrupa, Orta Doğu, Afrika ve Orta Asya başta olmak üzere 35 ülkeye ihracat gerçekleştiriyoruz."
+      },
+      {
+        "question": "Ürünlerinizin garanti süresi nedir?",
+        "answer": "Ürünlerimiz kullanım koşullarına bağlı olarak garanti kapsamındadır. Detaylı garanti bilgileri için satış ekibimize başvurabilirsiniz."
+      },
+      {
+        "question": "OEM üretim yapıyor musunuz?",
+        "answer": "Evet, müşteri spesifikasyonlarına göre OEM üretim hizmeti vermekteyiz. Teknik gereksinimlerinizi bize ileterek teklif alabilirsiniz."
+      },
+      {
+        "question": "Teslimat süresi ne kadardır?",
+        "answer": "Standart ürünlerde teslimat süresi 2-4 hafta, özel üretimlerde 4-8 hafta arasında değişmektedir."
+      }
+    ],
+    "cta": {
+      "title": "Aradığınız cevabı bulamadınız mı?",
+      "subtitle": "Bizimle doğrudan iletişime geçin.",
+      "button": "İletişime Geç →"
+    }
+  },
+  "contact": {
+    "pageTitle": "İletişim & Teklif | KADA Oto Radyatör",
+    "pageDescription": "KADA ile iletişime geçin. Teklif almak, ürün bilgisi edinmek veya bayi başvurusu için formu doldurun. Hızlı dönüş garantisi.",
+    "heading": "Bizimle İletişime Geçin",
+    "subheading": "Sorularınız, teklif talepleriniz veya bayilik başvurularınız için bize ulaşın.",
+    "form": {
+      "name": "Ad Soyad",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "company": "Firma Adı",
+      "subject": "Konu",
+      "message": "Mesajınız",
+      "product": "İlgili Ürün",
+      "submit": "Gönder",
+      "success": "Mesajınız başarıyla gönderildi. En kısa sürede dönüş yapacağız.",
+      "error": "Bir hata oluştu. Lütfen tekrar deneyin veya bizi arayın.",
+      "sending": "Gönderiliyor...",
+      "selectProduct": "Ürün seçiniz",
+      "subjects": {
+        "quote": "Teklif Talebi",
+        "technical": "Teknik Destek",
+        "dealer": "Bayilik Başvurusu",
+        "other": "Diğer"
+      }
+    },
+    "info": {
+      "address": "Adres",
+      "addressValue": "15 Temmuz, 1438. Sk. No:28, 34212 Bağcılar/İstanbul",
+      "phone": "Telefon",
+      "phoneValue": "+90 212 657 97 70",
+      "email": "E-posta",
+      "emailValue": "info@kadaradiator.com",
+      "workingHours": "Çalışma Saatleri",
+      "workingHoursValue": "Pazartesi - Cuma: 08:30 - 18:00"
+    }
+  },
+  "testimonials": {
+    "title": "Müşterilerimiz Ne Diyor?",
+    "items": [
+      {
+        "name": "Mehmet Yılmaz",
+        "company": "Yılmaz Otomotiv",
+        "text": "KADA ile 15 yıldır çalışıyoruz. Ürün kalitesi ve teslimat güvenilirliği rakipsiz."
+      },
+      {
+        "name": "Ahmet Demir",
+        "company": "Demir Makina",
+        "text": "Endüstriyel soğutma çözümlerinde KADA'nın teknik desteği ve ürün kalitesi bizi her zaman memnun etti."
+      },
+      {
+        "name": "Ali Kara",
+        "company": "Kara İhracat",
+        "text": "İhracat operasyonlarımız için güvenilir bir tedarikçi. Zamanında teslimat ve tutarlı kalite."
+      }
+    ]
+  },
+  "footer": {
+    "description": "1983'ten beri otomotiv ve endüstriyel soğutma çözümleri üreten güvenilir Türk üreticisi.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "contactInfo": "İletişim Bilgileri",
+    "rights": "Tüm hakları saklıdır.",
+    "address": "15 Temmuz, 1438. Sk. No:28, 34212 Bağcılar/İstanbul"
+  },
+  "common": {
+    "learnMore": "Daha Fazla",
+    "viewAll": "Tümünü Gör",
+    "backToHome": "Ana Sayfaya Dön",
+    "loading": "Yükleniyor...",
+    "required": "Zorunlu alan",
+    "simpleCta": {
+      "title": "Teklif almak ister misiniz?",
+      "subtitle": "Formumuzu doldurun, size hemen dönelim.",
+      "button": "Teklif Al →"
+    }
+  }
+}

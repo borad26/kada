@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Mono:wght@400;500&family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap");
+
+@import "tailwindcss";
+
+/* ── Brand Design Tokens via Tailwind v4 ─────────────── */
+@theme {
+  --color-primary: #0D6830;
+  --color-primary-dark: #0A5225;
+  --color-dark-bg: #1A1E1B;
+  --color-dark-mid: #232824;
+  --color-cream: #F0EDE6;
+  --color-text-light: #ECECEC;
+  --color-muted: #8A9490;
+  --color-border-dark: rgba(255, 255, 255, 0.07);
+  --color-border-light: #E0DDD7;
+
+  --font-heading: "Bebas Neue", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-mono: "DM Mono", monospace;
+  --font-arabic-heading: "Cairo", sans-serif;
+  --font-arabic-body: "Tajawal", sans-serif;
+}
+
+/* ── Base Resets ──────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-cream text-dark-bg font-body;
+  }
+
+  /* Arabic font overrides */
+  html[lang="ar"] body {
+    font-family: var(--font-arabic-body);
+  }
+
+  html[lang="ar"] h1,
+  html[lang="ar"] h2,
+  html[lang="ar"] h3,
+  html[lang="ar"] h4,
+  html[lang="ar"] h5,
+  html[lang="ar"] h6 {
+    font-family: var(--font-arabic-heading);
+  }
+
+  /* Heading defaults for non-Arabic */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: 0.02em;
+  }
+
+  /* Focus styles */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary;
+  }
+}
+
+/* ── Utility Classes ─────────────────────────────────── */
+@layer utilities {
+  .text-gradient-green {
+    background: linear-gradient(135deg, #0D6830 0%, #14a04d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-hero {
+    background: #F0EDE6;
+  }
+
+  .glass-card {
+    background: #FFFFFF;
+    border: 1px solid #E0DDD7;
+  }
+
+  .bg-grid-pattern {
+    background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.08) 1px, transparent 0);
+    background-size: 40px 40px;
+  }
+}
+
+/* ── Animations ──────────────────────────────────────── */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes counter-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out both;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out both;
+}
+
+.animate-delay-100 { animation-delay: 0.1s; }
+.animate-delay-200 { animation-delay: 0.2s; }
+.animate-delay-300 { animation-delay: 0.3s; }
+.animate-delay-400 { animation-delay: 0.4s; }
+.animate-delay-500 { animation-delay: 0.5s; }
+.animate-delay-600 { animation-delay: 0.6s; }
+.animate-delay-700 { animation-delay: 0.7s; }
+.animate-delay-800 { animation-delay: 0.8s; }

@@ -1,0 +1,129 @@
+---
+import { type Locale, getTranslations, CATEGORY_KEYS } from '../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = getTranslations(locale);
+const categories = t.products.categories as Record<string, { name: string; description: string }>;
+---
+
+<section id="quote-form" class="py-16 md:py-24 bg-cream">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10">
+      <h2 class="text-5xl md:text-6xl font-heading text-dark-bg mb-3">{t.products.quoteHeading}</h2>
+      <p class="text-muted text-base md:text-lg">{t.products.quoteDescription}</p>
+    </div>
+
+    <form
+      class="glass-card rounded-2xl p-6 md:p-8 space-y-5"
+      id="quote-request-form"
+      method="POST"
+      data-sending-text={t.contact.form.sending}
+    >
+      <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <!-- Name -->
+        <div>
+          <label for="quote-name" class="block text-sm font-medium text-dark-bg mb-1.5">{t.contact.form.name} <span class="text-primary">*</span></label>
+          <input
+            type="text"
+            id="quote-name"
+            name="name"
+            required
+            class="w-full px-4 py-2.5 bg-white border border-border-light rounded-lg text-dark-bg text-sm placeholder-muted focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+          />
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label for="quote-email" class="block text-sm font-medium text-dark-bg mb-1.5">{t.contact.form.email} <span class="text-primary">*</span></label>
+          <input
+            type="email"
+            id="quote-email"
+            name="email"
+            required
+            class="w-full px-4 py-2.5 bg-white border border-border-light rounded-lg text-dark-bg text-sm placeholder-muted focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+          />
+        </div>
+
+        <!-- Phone -->
+        <div>
+          <label for="quote-phone" class="block text-sm font-medium text-dark-bg mb-1.5">{t.contact.form.phone}</label>
+          <input
+            type="tel"
+            id="quote-phone"
+            name="phone"
+            class="w-full px-4 py-2.5 bg-white border border-border-light rounded-lg text-dark-bg text-sm placeholder-muted focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+          />
+        </div>
+
+        <!-- Company -->
+        <div>
+          <label for="quote-company" class="block text-sm font-medium text-dark-bg mb-1.5">{t.contact.form.company}</label>
+          <input
+            type="text"
+            id="quote-company"
+            name="company"
+            class="w-full px-4 py-2.5 bg-white border border-border-light rounded-lg text-dark-bg text-sm placeholder-muted focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+          />
+        </div>
+      </div>
+
+      <!-- Product Select -->
+      <div>
+        <label for="quote-product" class="block text-sm font-medium text-dark-bg mb-1.5">{t.contact.form.product}</label>
+        <select
+          id="quote-product"
+          name="product"
+          class="w-full px-4 py-2.5 bg-white border border-border-light rounded-lg text-dark-bg text-sm focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+        >
+          <option value="">{t.contact.form.selectProduct}</option>
+          {CATEGORY_KEYS.map((key) => (
+            <option value={key}>{categories[key]?.name}</option>
+          ))}
+        </select>
+      </div>
+
+      <!-- Message -->
+      <div>
+        <label for="quote-message" class="block text-sm font-medium text-dark-bg mb-1.5">{t.contact.form.message} <span class="text-primary">*</span></label>
+        <textarea
+          id="quote-message"
+          name="message"
+          rows={4}
+          required
+          class="w-full px-4 py-2.5 bg-white border border-border-light rounded-lg text-dark-bg text-sm placeholder-muted focus:border-primary focus:ring-1 focus:ring-primary transition-colors resize-y"
+        ></textarea>
+      </div>
+
+      <!-- Submit -->
+      <button
+        type="submit"
+        id="quote-submit-btn"
+        class="w-full py-3 px-6 bg-primary hover:bg-primary-dark text-white font-semibold rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+      >
+        {t.contact.form.submit}
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </button>
+
+      <!-- Success Message -->
+      <div id="quote-success" class="hidden p-4 bg-green-50 border border-green-200 text-green-800 rounded-xl text-sm">
+        {t.contact.form.success}
+      </div>
+
+      <!-- Error Message -->
+      <div id="quote-error" class="hidden p-4 bg-red-50 border border-red-200 text-red-800 rounded-xl text-sm">
+        {t.contact.form.error}
+      </div>
+    </form>
+
+    <script is:inline src="/js/form-config.js"></script>
+    <script is:inline src="/js/form-handler.js"></script>
+  </div>
+</section>
