@@ -1,4 +1,4 @@
 ---
-// Redirect root to default locale
-return Astro.redirect('/tr');
+import { redirect } from 'astro';
+return redirect('/tr', 301);
 ---
