@@ -1,4 +1,13 @@
 ---
-import { redirect } from 'astro';
-return redirect('/tr', 301);
+// Static redirect fallback
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting</title>
+  <meta http-equiv="refresh" content="0;url=/tr" />
+</head>
+<body>
+</body>
+</html>
