@@ -31,7 +31,7 @@ const categories = [...new Set(references.map(r => r.category))];
   <!-- Hero Section -->
   <section class="py-16 md:py-24 bg-cream relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="max-w-3xl">
+      <div class="max-w-3xl mx-auto text-center">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading text-dark-bg mb-4 animate-fade-in-up">{t.nav.references}</h1>
         <p class="text-lg text-dark-bg/80 animate-fade-in-up animate-delay-100">
           {locale === 'tr' ? 'Küresel iş ortaklarımız ve referanslarımızla sektördeki güçlü konumumuzu sürdürüyoruz.' : locale === 'en' ? 'We maintain our strong position in the sector with our global business partners and references.' : 'نحافظ على مكانتنا القوية في القطاع من خلال شركائنا وعملائنا العالميين.'}
@@ -45,7 +45,7 @@ const categories = [...new Set(references.map(r => r.category))];
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Category Filter -->
-      <div class="flex flex-wrap items-center gap-2 mb-12 animate-fade-in-up animate-delay-200">
+      <div class="flex flex-wrap items-center justify-center gap-2 mb-12 animate-fade-in-up animate-delay-200">
         <button class="filter-btn active px-4 py-2 rounded-full border border-primary bg-primary text-white text-sm font-medium transition-colors" data-category="all">
           {locale === 'tr' ? 'Tümü' : locale === 'en' ? 'All' : 'الكل'}
         </button>
@@ -64,7 +64,7 @@ const categories = [...new Set(references.map(r => r.category))];
               <div class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider rounded-md mb-4">
                 {ref.category}
               </div>
-              <h3 class="text-xl font-bold font-heading text-dark-bg mb-2">{ref.name}</h3>
+              <h3 class="text-xl font-bold font-heading text-dark-bg mb-2 text-left rtl:text-right"><bdi dir="ltr">{ref.name}</bdi></h3>
             </div>
             
             <div class="flex items-center gap-2 text-muted text-sm mt-6 pt-4 border-t border-border-light">
