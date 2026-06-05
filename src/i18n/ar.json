@@ -15,6 +15,7 @@
     "technicalData": "البيانات الفنية",
     "faq": "الأسئلة الشائعة",
     "contact": "اتصل بنا",
+    "references": "المراجع",
     "getQuote": "طلب عرض سعر"
   },
   "hero": {
@@ -117,28 +118,28 @@
       "title": "عملية الإنتاج لدينا",
       "steps": [
         {
-          "title": "Mühendislik ve 3D Modelleme (OEM Eşleştirme)",
-          "description": "Orijinal OEM kodlarına ve usta taleplerine göre parça ve döküm kazan tasarımları SolidWorks ortamında %100 hassasiyetle dijitalleştirilir."
+          "title": "الهندسة والنمذجة ثلاثية الأبعاد (مطابقة OEM)",
+          "description": "بناءً على أكواد OEM الأصلية ومطالب الخبراء، يتم رقمنة تصميمات الأجزاء وخزانات الصب بدقة 100% في بيئة SolidWorks."
         },
         {
-          "title": "Sertifikalı Ham Madde Analizi",
-          "description": "Yüksek ısıl iletkenliğe sahip birinci sınıf bakır, pirinç ve alüminyum levhalar, uluslararası sertifikalı tedarikçilerden ergitme ve test aşamasına alınır."
+          "title": "تحليل المواد الخام المعتمدة",
+          "description": "يتم نقل صفائح النحاس والنحاس الأصفر والألمنيوم من الدرجة الأولى ذات التوصيل الحراري العالي من الموردين المعتمدين دوليًا إلى مراحل الصهر والاختبار."
         },
         {
-          "title": "CNC Gofraj ve Kalıplama (Petek İmalatı)",
-          "description": "En son teknoloji CNC tezgahlarımızda, radyatörün kalbini oluşturan dikey sirkülasyon boruları ve petek finleri özel kalıplarla milimetrik olarak bükülür."
+          "title": "النقش والقولبة باستخدام CNC (تصنيع الأجزاء الأساسية)",
+          "description": "في ماكينات CNC الحديثة لدينا، يتم ثني أنابيب الدوران العمودية وزعانف التبريد، التي تشكل قلب الردياتير، بدقة ملليمترية باستخدام قوالب خاصة."
         },
         {
-          "title": "Robotik Entegre Montaj ve Kaynak",
-          "description": "Davlumbaz sacları, yan pleytler ve su kazanları, fırın boya öncesi sarsıntıya ve yüksek basınca dayanıklı robotik kaynak hatlarında birleştirilir."
+          "title": "التجميع واللحام الآلي المتكامل",
+          "description": "يتم تجميع الألواح الواقية واللوحات الجانبية وخزانات المياه في خطوط لحام آلية مقاومة للصدمات والضغط العالي قبل طلاء المسحوق."
         },
         {
-          "title": "Hardcore Basınç ve Sızıntı Testleri",
-          "description": "Üretilen her radyatör, zorlu şantiye ve askeri arazi koşullarına dayanıklılık için yüksek bar basınç altında su sızdırmazlık ve termal simülasyon testlerine tabi tutulur."
+          "title": "اختبارات الضغط والتسرب الصارمة",
+          "description": "يخضع كل ردياتير يتم إنتاجه لاختبارات إحكام المياه والمحاكاة الحرارية تحت ضغط عالٍ لضمان المتانة في مواقع البناء القاسية وظروف التضاريس العسكرية."
         },
         {
-          "title": "Koruyucu Ambalaj ve Küresel Lojistik",
-          "description": "Giriş-çıkış rekorları yeşil koruyucu tapalarla kapatılan, özel kalın ambalaj kutularına yerleştirilen parça serileri Türkiye geneline ve 35 ülkeye güvenle sevk edilir."
+          "title": "التغليف الواقي والخدمات اللوجستية العالمية",
+          "description": "يتم إغلاق تجهيزات الإدخال والإخراج بسدادات حماية خضراء، ويتم وضع سلسلة الأجزاء في صناديق تغليف سميكة خاصة ليتم شحنها بأمان في جميع أنحاء تركيا وإلى 35 دولة."
         }
       ]
     },

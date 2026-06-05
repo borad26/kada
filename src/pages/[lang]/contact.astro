@@ -175,7 +175,9 @@ const delays = ['animate-delay-100', 'animate-delay-200', 'animate-delay-300', '
               </div>
               <div>
                 <div class="text-xs font-mono text-muted uppercase tracking-wider mb-1">{info.label}</div>
-                <div class="text-dark-bg text-sm font-medium">{info.value}</div>
+                <div class="text-dark-bg text-sm font-medium text-left rtl:text-right">
+                  <bdi dir="ltr">{info.value}</bdi>
+                </div>
               </div>
             </div>
           ))}

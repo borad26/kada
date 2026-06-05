@@ -74,6 +74,7 @@ export function getNavLinks(locale: Locale) {
     { href: localizedPath('/network', locale), label: t.nav.network },
     { href: localizedPath('/technical-data', locale), label: t.nav.technicalData },
     { href: localizedPath('/faq', locale), label: t.nav.faq },
+    { href: localizedPath('/referanslar', locale), label: t.nav.references },
     { href: localizedPath('/contact', locale), label: t.nav.contact },
   ];
 }

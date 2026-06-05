@@ -15,6 +15,7 @@
     "technicalData": "Teknik Veriler",
     "faq": "SSS",
     "contact": "İletişim",
+    "references": "Referanslar",
     "getQuote": "Teklif Al"
   },
   "hero": {
@@ -51,7 +52,7 @@
     "quoteDescription": "İhtiyacınız olan ürün hakkında bilgi almak için formu doldurun.",
     "categories": {
       "radiatorCores": {
-        "name": "Radyatör Çekirdekleri",
+        "name": "Radyatör Petekleri",
         "description": "Bakır ve alüminyum malzemelerden üretilen yüksek performanslı radyatör petekleri. Binek araçlardan ağır iş makinelerine kadar her araç tipine uygun üretim yapılmaktadır. Özel ölçü ve teknik gereksinimlere göre imalat imkânı mevcuttur."
       },
       "fullRadiators": {
@@ -315,7 +316,7 @@
     "items": [
       {
         "question": "KADA hangi tür soğutma ürünleri üretmektedir?",
-        "answer": "KADA, radyatör çekirdekleri, komple radyatörler, intercooler, yağ soğutucuları, klima radyatörleri, endüstriyel soğutucular, kalorifer radyatörleri ve aftercooler olmak üzere geniş bir ürün yelpazesine sahiptir."
+        "answer": "KADA, radyatör petekleri, komple radyatörler, intercooler, yağ soğutucuları, klima radyatörleri, endüstriyel soğutucular, kalorifer radyatörleri ve aftercooler olmak üzere geniş bir ürün yelpazesine sahiptir."
       },
       {
         "question": "Sipariş için minimum adet var mı?",
