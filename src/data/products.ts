@@ -87,6 +87,81 @@ export const ALL_PRODUCTS = [
   { id: "agri-nh-tm130", name: "New Holland TM130 Ağır Hizmet Traktör Radyatörü", category: "zirai-araclar-grubu", brand: "New Holland", oem: "82033790", code: "KP50100", images: ["/zirai-araclar-grubu/new-holland/NH TM130 (82033790) KP50100.jpg"] },
   { id: "agri-nh-tm135", name: "New Holland TM135 Yüksek Kapasiteli Soğutma Bloğu", category: "zirai-araclar-grubu", brand: "New Holland", oem: "87352188", code: "KP60130", images: ["/zirai-araclar-grubu/new-holland/NH TM135 (87352188) KP60130.jpg"] },
   { id: "agri-valtra-m150", name: "Valtra M150 Dev Flanşlı Ağır Segment Tarım Radyatörü", category: "zirai-araclar-grubu", brand: "Valmet", oem: "35223220", code: "KN51190", images: ["/zirai-araclar-grubu/valmet/Valtra M150 (35223220) KN51190.jpg", "/zirai-araclar-grubu/valmet/Valmet 505 (30068900) KN41390.jpg", "/zirai-araclar-grubu/valmet/Valmet 602 (30281700) KN41380.jpg"] },
+  {
+    id: "img-0062",
+    name: "Klima Kondenser Ünitesi",
+    slug: "klima-kondenser-img0062",
+    category: "klima-grubu",
+    brand: "Muhtelif",
+    oem: "IMG0062",
+    code: "IMG0062",
+    images: ["/klima-grubu/IMG_0062.JPG"],
+    i18n: {
+      tr: { name: "Klima Kondenser Ünitesi", description: "Araç iklimlendirme sistemi için kondenser ünitesi." },
+      en: { name: "AC Condenser Unit", description: "Condenser unit for vehicle air conditioning system." },
+      ar: { name: "وحدة مكثف التكييف", description: "وحدة مكثف لنظام تكييف المركبة." }
+    }
+  },
+  {
+    id: "img-0063",
+    name: "Klima Soğutucu Ünitesi",
+    slug: "klima-kondenser-img0063",
+    category: "klima-grubu",
+    brand: "Muhtelif",
+    oem: "IMG0063",
+    code: "IMG0063",
+    images: ["/klima-grubu/IMG_0063.JPG"],
+    i18n: {
+      tr: { name: "Klima Soğutucu Ünitesi", description: "Araç iklimlendirme sistemi için soğutucu ünitesi." },
+      en: { name: "AC Cooling Unit", description: "Cooling unit for vehicle air conditioning system." },
+      ar: { name: "وحدة تبريد التكييف", description: "وحدة تبريد لنظام تكييف المركبة." }
+    }
+  },
+  {
+    id: "img-0064",
+    name: "Klima Evaporatör Ünitesi",
+    slug: "klima-kondenser-img0064",
+    category: "klima-grubu",
+    brand: "Muhtelif",
+    oem: "IMG0064",
+    code: "IMG0064",
+    images: ["/klima-grubu/IMG_0064.JPG"],
+    i18n: {
+      tr: { name: "Klima Evaporatör Ünitesi", description: "Araç iklimlendirme sistemi için evaporatör ünitesi." },
+      en: { name: "AC Evaporator Unit", description: "Evaporator unit for vehicle air conditioning system." },
+      ar: { name: "وحدة مبخر التكييف", description: "وحدة مبخر لنظام تكييف المركبة." }
+    }
+  },
+  {
+    id: "s7300902",
+    name: "Radyatör Petegi S7300902",
+    slug: "radyator-petegi-s7300902",
+    category: "petek-grubu",
+    brand: "Muhtelif",
+    oem: "S7300902",
+    code: "S7300902",
+    images: ["/petek-grubu/S7300902.JPG"],
+    i18n: {
+      tr: { name: "Radyatör Petegi S7300902", description: "Yüksek performanslı bakır ve alüminyum radyatör peteği." },
+      en: { name: "Radiator Core S7300902", description: "High performance copper and aluminium radiator core." },
+      ar: { name: "نواة الرادياتير S7300902", description: "نواة رادياتير عالية الأداء من النحاس والألومنيوم." }
+    }
+  },
+  {
+    id: "s7300906",
+    name: "Radyatör Petegi S7300906",
+    slug: "radyator-petegi-s7300906",
+    category: "petek-grubu",
+    brand: "Muhtelif",
+    oem: "S7300906",
+    code: "S7300906",
+    images: ["/petek-grubu/S7300906.JPG"],
+    i18n: {
+      tr: { name: "Radyatör Petegi S7300906", description: "Yüksek performanslı bakır ve alüminyum radyatör peteği." },
+      en: { name: "Radiator Core S7300906", description: "High performance copper and aluminium radiator core." },
+      ar: { name: "نواة الرادياتير S7300906", description: "نواة رادياتير عالية الأداء من النحاس والألومنيوم." }
+    }
+  }
 ];
 
 export const CATEGORY_MAPS: Record<string, Record<string, string>> = {
