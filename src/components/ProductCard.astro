@@ -5,6 +5,7 @@ import { getCategoryMap, translateProductName } from '../data/products';
 export interface Props {
   product: {
     id: string;
+    slug?: string;
     name: string;
     category: string;
     brand: string;
@@ -22,7 +23,7 @@ const displayName = translateProductName(product.name, locale);
 ---
 
 <a
-  href={localizedPath(`/products/${product.id}`, locale)}
+  href={localizedPath(`/products/${product.slug || product.id}`, locale)}
   class="product-card block bg-white rounded-2xl shadow-sm hover:shadow-xl border border-[#E0DDD7] hover:border-primary/20 transition-all duration-300 hover:-translate-y-1 overflow-hidden group"
   data-id={product.id}
   data-name={product.name.toLowerCase()}

@@ -9,10 +9,14 @@ import { ALL_PRODUCTS, getCategoryMap, translateProductName } from '../../../dat
 export function getStaticPaths() {
   const locales = ['tr', 'en', 'ar'];
   return locales.flatMap(lang =>
-    ALL_PRODUCTS.map(product => ({
-      params: { lang, id: product.id },
-      props: { product },
-    }))
+    ALL_PRODUCTS.map(product => {
+      // @ts-ignore
+      const slug = product.slug || product.id;
+      return {
+        params: { lang, slug },
+        props: { product },
+      };
+    })
   );
 }
 
