@@ -9,9 +9,10 @@ interface Props {
   description: string;
   locale: Locale;
   canonicalPath?: string;
+  preloadImage?: string;
 }
 
-const { title, description, locale, canonicalPath = '' } = Astro.props;
+const { title, description, locale, canonicalPath = '', preloadImage } = Astro.props;
 const rtl = isRTL(locale);
 const dir = rtl ? 'rtl' : 'ltr';
 const site = 'https://www.kadaradiator.com';
@@ -34,6 +35,9 @@ const ogLocale = locale === 'tr' ? 'tr_TR' : locale === 'en' ? 'en_US' : 'ar_AR'
     <title>{title}</title>
     {isHomepage && (
       <link rel="preload" as="image" href="/bakir.jpg" imagesizes="(max-width: 768px) 100vw, 50vw" />
+    )}
+    {preloadImage && (
+      <link rel="preload" as="image" href={preloadImage} />
     )}
 
     <!-- Canonical -->

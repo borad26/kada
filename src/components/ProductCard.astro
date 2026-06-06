@@ -40,6 +40,7 @@ const displayName = translateProductName(product.name, locale);
       alt={`KADA ${product.brand} ${product.name} Soğutma Sistemi - Orijinal OEM ${product.oem} - Parça Kodu ${product.code}`}
       class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
       loading="lazy"
+      decoding="async"
       onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
     />
     <!-- Fallback if image fails -->

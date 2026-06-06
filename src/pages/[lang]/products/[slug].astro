@@ -43,7 +43,8 @@ relatedProducts = relatedProducts.slice(0, 4);
   title={`${product.name} | KADA Oto Radyatör`}
   description={`KADA ${product.brand} ${product.name} - OEM ${product.oem} - Ürün Kodu ${product.code}. Endüstriyel soğutma sistemi. Teklif alın.`}
   locale={locale}
-  canonicalPath={`/products/${product.id}`}
+  canonicalPath={`/products/${product.slug || product.id}`}
+  preloadImage={product.images[0]}
 >
 
 <div class="bg-cream min-h-screen">
@@ -75,6 +76,8 @@ relatedProducts = relatedProducts.slice(0, 4);
                 src={product.images[0]}
                 alt={`KADA ${product.brand} ${product.name} Soğutma Sistemi - Orijinal OEM ${product.oem} - Parça Kodu ${product.code}`}
                 class="max-w-full max-h-full object-contain transition-opacity duration-200"
+                fetchpriority="high"
+                decoding="async"
               />
             </div>
 
@@ -107,6 +110,7 @@ relatedProducts = relatedProducts.slice(0, 4);
                     alt={`${product.name} - Görsel ${i + 1}`}
                     class="w-full h-full object-contain"
                     loading="lazy"
+                    decoding="async"
                   />
                 </button>
               ))}
