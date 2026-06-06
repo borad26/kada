@@ -42,6 +42,17 @@ const iconsData: Record<string, string> = {
   factory: 'M4 21V10l4-3v3l4-3v3l4-3v3l4-3v11H4zm2-2h2v-3H6v3zm4 0h2v-3h-2v3zm4 0h2v-3h-2v3z',
 };
 
+const categoryFilterMap: Record<string, string> = {
+  radiatorCores: 'Petek Grubu',
+  fullRadiators: 'Kamyonet & Kamyon',
+  intercoolers: 'Klima Grubu',
+  oilCoolers: 'Yağ Radyatörü',
+  acRadiators: 'Klima Grubu',
+  industrialCoolers: 'İş Makinaları',
+  heaters: 'Kalorifer Grubu',
+  aftercoolers: 'Özel İmalat',
+};
+
 const delays = ['animate-delay-100', 'animate-delay-200', 'animate-delay-300'];
 ---
 
@@ -69,35 +80,32 @@ const delays = ['animate-delay-100', 'animate-delay-200', 'animate-delay-300'];
       <div class="w-full md:flex-1 relative h-48 md:h-[400px] lg:h-[550px] animate-fade-in-up animate-delay-200">
         <div class="absolute inset-0 overflow-hidden rounded-2xl shadow-2xl group" id="hero-slideshow">
           <img 
-            src="/kaynak.avif" 
-            alt="KADA üretim - kaynak işlemi" 
+            src="/bakir.jpg" 
+            alt="KADA bakır radyatör üretimi" 
             class="hero-slide absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-in-out group-hover:scale-105 opacity-100"
             width="1200"
             height="800"
             sizes="(max-width: 768px) 100vw, 50vw"
             fetchpriority="high"
             loading="eager"
-            onerror="this.src='/kaynak.avif'"
           />
           <img 
-            src="/hero-radiator.webp" 
-            alt="KADA radyatör ürünü" 
+            src="/kaynak.avif" 
+            alt="KADA üretim - kaynak işlemi" 
             class="hero-slide absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-in-out group-hover:scale-105 opacity-0"
             width="1200"
             height="800"
             sizes="(max-width: 768px) 100vw, 50vw"
             loading="lazy"
-            onerror="this.src='/hero-radiator.webp'"
           />
           <img 
-            src="/hero-radiator-macro.webp" 
-            alt="KADA radyatör detay" 
+            src="/calisan.jpg" 
+            alt="KADA üretim ekibi" 
             class="hero-slide absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-in-out group-hover:scale-105 opacity-0"
             width="1200"
             height="800"
             sizes="(max-width: 768px) 100vw, 50vw"
             loading="lazy"
-            onerror="this.src='/hero-radiator-macro.webp'"
           />
           <!-- Slight dark green tint overlay -->
           <div class="absolute inset-0 bg-[#0D6830] opacity-10 pointer-events-none z-10"></div>
@@ -186,7 +194,7 @@ const delays = ['animate-delay-100', 'animate-delay-200', 'animate-delay-300'];
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {CATEGORY_KEYS.map((key, i) => (
-          <a href={localizedPath('/products', locale)} class:list={['group block animate-fade-in-up cursor-pointer bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-1 p-6 md:p-8', delays[i % 3] || '']}>
+          <a href={`${localizedPath('/products', locale)}?category=${encodeURIComponent(categoryFilterMap[key] || '')}`} class:list={['group block animate-fade-in-up cursor-pointer bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-1 p-6 md:p-8', delays[i % 3] || '']}>
             <div class="flex flex-col items-center text-center">
               <div class="w-[72px] h-[72px] shrink-0 bg-primary rounded-full flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">

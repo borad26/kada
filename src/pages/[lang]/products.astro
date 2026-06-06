@@ -166,9 +166,13 @@ const seoKeywords = [...new Set(ALL_PRODUCTS.flatMap(p => [p.brand, p.name, p.oe
 
   // Check URL params for pre-selected category
   const urlParams = new URLSearchParams(window.location.search);
-  const preCategory = urlParams.get('category');
-  if (preCategory && categoryFilter.querySelector(`option[value="${preCategory}"]`)) {
-    categoryFilter.value = preCategory;
+  const preselect = urlParams.get('category');
+  if (preselect) {
+    // Select the option that matches the preselect string
+    const optionToSelect = Array.from(categoryFilter.options).find(opt => opt.value === preselect);
+    if (optionToSelect) {
+      categoryFilter.value = preselect;
+    }
     filterProducts();
   }
 </script>
