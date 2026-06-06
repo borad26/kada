@@ -85,7 +85,6 @@ export function getNavLinks(locale: Locale) {
 export const CATEGORY_KEYS = [
   'radiatorCores',
   'fullRadiators',
-  'intercoolers',
   'oilCoolers',
   'acRadiators',
   'industrialCoolers',
