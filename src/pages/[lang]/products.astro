@@ -165,13 +165,19 @@ const seoKeywords = [...new Set(ALL_PRODUCTS.flatMap(p => [p.brand, p.name, p.oe
   });
 
   // Check URL params for pre-selected category
-  const urlParams = new URLSearchParams(window.location.search);
-  const preselect = urlParams.get('category');
-  if (preselect) {
-    // Select the option that matches the preselect string
-    const optionToSelect = Array.from(categoryFilter.options).find(opt => opt.value === preselect);
+  const urlCategory = new URLSearchParams(window.location.search).get('category');
+  if (urlCategory) {
+    // Map URL slugs to internal category data values for filtering
+    const slugToInternal: Record<string, string> = {
+      'intercooler': 'klima-grubu',
+      'yag-radyatoru': 'yag-radyator-grubu',
+    };
+    
+    const internalCategory = slugToInternal[urlCategory] || urlCategory;
+    
+    const optionToSelect = Array.from(categoryFilter.options).find(opt => opt.value === internalCategory);
     if (optionToSelect) {
-      categoryFilter.value = preselect;
+      categoryFilter.value = internalCategory;
     }
     filterProducts();
   }

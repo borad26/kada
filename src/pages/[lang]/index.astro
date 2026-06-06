@@ -43,14 +43,14 @@ const iconsData: Record<string, string> = {
 };
 
 const categoryFilterMap: Record<string, string> = {
-  radiatorCores: 'Petek Grubu',
-  fullRadiators: 'Kamyonet & Kamyon',
-  intercoolers: 'Klima Grubu',
-  oilCoolers: 'Yağ Radyatörü',
-  acRadiators: 'Klima Grubu',
-  industrialCoolers: 'İş Makinaları',
-  heaters: 'Kalorifer Grubu',
-  aftercoolers: 'Özel İmalat',
+  radiatorCores: 'petek-grubu',
+  fullRadiators: 'kamyonet-kamyon',
+  intercoolers: 'intercooler',
+  oilCoolers: 'yag-radyatoru',
+  acRadiators: 'klima-grubu',
+  industrialCoolers: 'is-makinalari',
+  heaters: 'kalorifer-grubu',
+  aftercoolers: 'ozel-imalat',
 };
 
 const delays = ['animate-delay-100', 'animate-delay-200', 'animate-delay-300'];
@@ -194,7 +194,7 @@ const delays = ['animate-delay-100', 'animate-delay-200', 'animate-delay-300'];
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {CATEGORY_KEYS.map((key, i) => (
-          <a href={`${localizedPath('/products', locale)}?category=${encodeURIComponent(categoryFilterMap[key] || '')}`} class:list={['group block animate-fade-in-up cursor-pointer bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-1 p-6 md:p-8', delays[i % 3] || '']}>
+          <a href={`${localizedPath('/products', locale)}?category=${categoryFilterMap[key] || ''}`} class:list={['group block animate-fade-in-up cursor-pointer bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-1 p-6 md:p-8', delays[i % 3] || '']}>
             <div class="flex flex-col items-center text-center">
               <div class="w-[72px] h-[72px] shrink-0 bg-primary rounded-full flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
