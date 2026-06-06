@@ -95,26 +95,11 @@ export const ALL_PRODUCTS = [
     brand: "Muhtelif",
     oem: "IMG0062",
     code: "IMG0062",
-    images: ["/klima-grubu/IMG_0062.JPG"],
+    images: ["/klima-grubu/IMG_0062.JPG", "/klima-grubu/IMG_0063.JPG"],
     i18n: {
       tr: { name: "Klima Kondenser Ünitesi", description: "Araç iklimlendirme sistemi için kondenser ünitesi." },
       en: { name: "AC Condenser Unit", description: "Condenser unit for vehicle air conditioning system." },
       ar: { name: "وحدة مكثف التكييف", description: "وحدة مكثف لنظام تكييف المركبة." }
-    }
-  },
-  {
-    id: "img-0063",
-    name: "Klima Soğutucu Ünitesi",
-    slug: "klima-kondenser-img0063",
-    category: "klima-grubu",
-    brand: "Muhtelif",
-    oem: "IMG0063",
-    code: "IMG0063",
-    images: ["/klima-grubu/IMG_0063.JPG"],
-    i18n: {
-      tr: { name: "Klima Soğutucu Ünitesi", description: "Araç iklimlendirme sistemi için soğutucu ünitesi." },
-      en: { name: "AC Cooling Unit", description: "Cooling unit for vehicle air conditioning system." },
-      ar: { name: "وحدة تبريد التكييف", description: "وحدة تبريد لنظام تكييف المركبة." }
     }
   },
   {
