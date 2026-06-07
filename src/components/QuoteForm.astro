@@ -10,7 +10,7 @@ const t = getTranslations(locale);
 const categories = t.products.categories as Record<string, { name: string; description: string }>;
 ---
 
-<section id="quote-form" class="py-16 md:py-24 bg-cream">
+<section id="quote-form" class="py-16 md:py-24 bg-cream below-fold-section">
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-10">
       <h2 class="text-5xl md:text-6xl font-heading text-dark-bg mb-3">{t.products.quoteHeading}</h2>
@@ -123,7 +123,42 @@ const categories = t.products.categories as Record<string, { name: string; descr
       </div>
     </form>
 
-    <script is:inline src="/js/form-config.js"></script>
-    <script is:inline src="/js/form-handler.js"></script>
+    <script is:inline>
+      const form = document.getElementById('quote-request-form');
+      let scriptsLoaded = false;
+      
+      const loadFormScripts = () => {
+        if (scriptsLoaded) return;
+        scriptsLoaded = true;
+        
+        const configScript = document.createElement('script');
+        configScript.src = '/js/form-config.js';
+        document.body.appendChild(configScript);
+        
+        configScript.onload = () => {
+          const handlerScript = document.createElement('script');
+          handlerScript.src = '/js/form-handler.js';
+          document.body.appendChild(handlerScript);
+        };
+      };
+
+      // Load on interaction
+      if (form) {
+        form.addEventListener('focusin', loadFormScripts, { passive: true, once: true });
+        form.addEventListener('mouseenter', loadFormScripts, { passive: true, once: true });
+        form.addEventListener('touchstart', loadFormScripts, { passive: true, once: true });
+        
+        // Also load via Intersection Observer as backup
+        if ('IntersectionObserver' in window) {
+          const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+              loadFormScripts();
+              observer.disconnect();
+            }
+          }, { rootMargin: '50px' });
+          observer.observe(form);
+        }
+      }
+    </script>
   </div>
 </section>
